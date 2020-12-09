@@ -1,3 +1,37 @@
-body{
-    
+header{
+    overflow: hidden;
+    padding: 0 10px;
+    background-color: rgb(255, 72, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    li{
+        list-style: none;
+        font-weight: bold;
+    }
+    a{
+        
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+        background-color: white;
+        margin: 4px;
+    }
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
+
+section{
+    width: 80%;
+    margin: 2vh auto;
+    background-color: rgba(173, 114, 62, 0.445);
+    padding: 2px 5px;
 }
