@@ -12,38 +12,47 @@ body{
     margin: 0;
 }
 header{
-    overflow: hidden;
-    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
     background-color: rgb(9, 75, 39);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    li{
-        list-style: none;
-        font-weight: bold;
-    }
-    a{
-        float: left;
-        color: black;
-        text-align: center;
-        padding: 12px;
-        text-decoration: none;
-        font-size: 18px;
-        line-height: 25px;
-        border-radius: 4px;
-        background-color: white;
-        margin: 4px;
-        border-bottom: 5px solid rgb(150, 73, 29);
-    }
-    #navbar{
+    padding: 0 15px;
+    overflow: hidden;
+    .headerContent{
+        width: 80%;
+        margin: auto;
+        padding: 0;
+        color: white;
         display: flex;
-        justify-content: space-around;
-        .active{
-            background-color: rgb(150, 73, 29);
-            border-bottom: 5px solid white;
-            color: white;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            font-weight: bold;
         }
-    }
+        a{
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+            background-color: white;
+            margin: 4px;
+            border-bottom: 5px solid rgb(150, 73, 29);
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+            .active, a:hover{
+                background-color: rgb(150, 73, 29);
+                border-bottom: 5px solid white;
+                color: white;
+            }
+        }
+    }   
 }
 
 .forside{
@@ -61,6 +70,11 @@ header{
         color: white;
         font-size: 2em;
     }
+    #maintop{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://image.forskning.no/142013.jpg?imageId=142013&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630");
+        height: 140vh;
+
+    }
 }
 
 section{
@@ -70,5 +84,44 @@ section{
     padding: 2px 10px;
     .sectionTitle{
         border-bottom: 2px solid black;
+    }
+    article{
+        margin: 20px 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        .tekst{
+            margin-top: 0;
+        }
+        .bilde{
+            img{
+                width: 100%;
+            }
+            .bildetekst{
+                position: relative;
+                font-size: .8em;
+                margin-top: 0;
+                color: rgb(66, 66, 66);
+            }
+        }
+        .tekstboks{
+            background-color: rgb(9, 75, 39);
+            color: white;
+            padding: 0 14px;
+        }
+    }
+}
+
+footer{
+    background-color: rgb(150, 73, 29);
+    #footerNav{
+        display: flex;
+        
+    }
+    #footerEnd{
+        grid-area: 2 / 1 / 3 / 3 ;
+        text-align: center;
+        color: white;
     }
 }
