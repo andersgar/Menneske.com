@@ -144,12 +144,43 @@ section article .tekstboks {
 
 footer {
   background-color: #96491d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  overflow: hidden;
 }
 
 footer #footerNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5vh 0;
+  width: 100%;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  list-style: none;
+  font-weight: bold;
+}
+
+footer #footerNav a {
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin: 4px;
+  border: 5px solid white;
+}
+
+footer #footerNav a:hover {
+  color: black;
+  border: 5px solid black;
 }
 
 footer #footerEnd {

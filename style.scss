@@ -115,9 +115,33 @@ section{
 
 footer{
     background-color: rgb(150, 73, 29);
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    overflow: hidden;
     #footerNav{
         display: flex;
-        
+        justify-content: space-around;
+        margin: 5vh 0;
+        width: 100%;
+        padding-inline-start: 0;
+        list-style: none;
+        font-weight: bold;
+        a{
+            color: white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+            margin: 4px;
+            border: 5px solid white;
+            &:hover{
+                color: black;
+                border: 5px solid black;
+            }
+        }
     }
     #footerEnd{
         grid-area: 2 / 1 / 3 / 3 ;
