@@ -20,9 +20,19 @@ body {
 }
 
 header {
-  overflow: hidden;
-  padding: 0 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   background-color: #094b27;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+header .headerContent {
+  width: 80%;
+  margin: auto;
+  padding: 0;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,12 +42,12 @@ header {
           justify-content: space-between;
 }
 
-header li {
+header .headerContent li {
   list-style: none;
   font-weight: bold;
 }
 
-header a {
+header .headerContent a {
   float: left;
   color: black;
   text-align: center;
@@ -51,7 +61,7 @@ header a {
   border-bottom: 5px solid #96491d;
 }
 
-header #navbar {
+header .headerContent #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +69,7 @@ header #navbar {
       justify-content: space-around;
 }
 
-header #navbar .active {
+header .headerContent #navbar .active, header .headerContent #navbar a:hover {
   background-color: #96491d;
   border-bottom: 5px solid white;
   color: white;
@@ -84,6 +94,12 @@ header #navbar .active {
   font-size: 2em;
 }
 
+.forside #maintop {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://image.forskning.no/142013.jpg?imageId=142013&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://image.forskning.no/142013.jpg?imageId=142013&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630");
+  height: 140vh;
+}
+
 section {
   width: 80%;
   margin: 2vh auto;
@@ -93,5 +109,56 @@ section {
 
 section .sectionTitle {
   border-bottom: 2px solid black;
+}
+
+section article {
+  margin: 20px 0;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+section article .tekst {
+  margin-top: 0;
+}
+
+section article .bilde img {
+  width: 100%;
+}
+
+section article .bilde .bildetekst {
+  position: relative;
+  font-size: .8em;
+  margin-top: 0;
+  color: #424242;
+}
+
+section article .tekstboks {
+  background-color: #094b27;
+  color: white;
+  padding: 0 14px;
+}
+
+footer {
+  background-color: #96491d;
+}
+
+footer #footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer #footerEnd {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / 3 / 3;
+  text-align: center;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
