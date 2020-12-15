@@ -1,0 +1,54 @@
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="overlay" class="content blur">
+
+        <!-- index html her -->
+
+
+    </div>
+    <div class="pop-up">
+        <div class="pop-upbox">
+            <div id="quiz">
+                <h1>Bare mennesker tillat</h1>
+                <hr style="margin-bottom: 20px">
+                <p id="question"></p>
+                <div class="buttons">
+                    <button id="btn0" class="btn">
+                        <span id="choice0"></span>
+                    </button>
+                    <button id="btn1" class="btn">
+                        <span id="choice1"></span>
+                    </button>
+                    <button id="btn2" class="btn">
+                        <span id="choice2"></span>
+                    </button>
+                    <button id="btn3" class="btn">
+                        <span id="choice3"></span>
+                    </button>
+                </div>
+                <hr style="margin-top: 50px">
+                <footer>
+                    <p id="progress">spørsmål x av y</p>
+                </footer>
+            </div>
+        </div>
+        <script src="questions.js"></script>
+    </div>
+    <audio id="myAudio">
+        <source src="alarm.mp3" type="audio">
+    </audio>
+</body>
+
+</html>
+
+
+
+<!-- https://codepen.io/4rx/pen/bRRgXQ -->

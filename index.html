@@ -6,21 +6,173 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="./stylequiz.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <title>Hva er et menneske.com</title>
 </head>
 <body>
+    <div id="overlay" class="content blur">
     <header>
-        <h1 id="logo">Hva er et menneske?</h1>
-        <ul id="navbar">
-            <li><a href="main.html">Mennesket</a></li>
-            <li><a href="tidslinje.html">Tidslinje</a></li>
-            <li><a href="lit.html">Litteratur</a></li>
-        </ul>
+        <div class="headerContent">
+            <h1 id="logo">Hva er et menneske?</h1>
+            <ul id="navbar">
+                <li><a href="main.html" id="NavDef">Definisjon</a></li>
+                <li><a href="main.html#Evolusjon" id="NavEvo">Evolusjon</a></li>
+                <li><a href="main.html#Biologi" id="NavBio">Biologi</a></li>
+                <li><a href="main.html#Psykologi" id="NavPsy">Psykologi</a></li>
+                <li><a href="main.html#Kultur" id="NavKul">Kultur</a></li>
+                <li><a href="main.html#Samfunn" id="NavSam">Samfunn</a></li>
+            </ul>
+        </div>
     </header>
-
-    <h1>BLÆBLÆ dette skal være capcha siden, hovedside <a href="main.html">her</a></h1>
     
+    <div class="forside" id="maintop">
+        <div class="forsidetekst">
+            <h1>Mennesket</h1>
+            <h2>Homo sapiens</h2>
+        </div>
+    </div>
+    
+    <section id="Definisjon">
+        <h3 class="sectionTitle">Dyret menneske</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laudantium impedit excepturi consequatur odit
+            labore, nihil mollitia assumenda sapiente sit aut incidunt molestias? Facilis nihil recusandae sapiente itaque
+            rem perferendis corrupti officiis iusto in saepe! Commodi veniam itaque ipsa cupiditate, deleniti non voluptate
+            error dicta minima similique nulla sapiente? Deserunt voluptas id modi corrupti eligendi nemo iusto illum qui
+            enim, et corporis nam voluptatibus in sapiente? Molestiae adipisci iste voluptate ipsam dolore possimus
+            asperiores eius quae quo enim. Nulla ratione iste perferendis eligendi optio neque iure unde maxime, dolores
+            odio quo molestiae pariatur perspiciatis? Repudiandae assumenda dolore perferendis voluptates, impedit, sunt
+            expedita et quasi amet corrupti possimus. Corrupti dignissimos et placeat! Recusandae perspiciatis quas porro,
+            suscipit assumenda ab cum! Perspiciatis sunt impedit, doloremque ad corporis autem, animi ipsa deleniti tenetur
+            vitae hic dicta quo placeat totam dolorem voluptate veniam aut praesentium voluptatibus maiores. Inventore nobis
+            recusandae eos labore quidem cupiditate.</p>
+        <article class="tekstboksSection">
+            <div class="tekstboks">
+                <p><b>Mennesket (Homo sapiens)</b> er en art av menneskeapene som går oppreist på to bein. Det har en
+                    velutviklet hjerne som gjør språkbruk, abstrakt tenking og selvforståelse mulig. Disse egenskapene gjør
+                    at arten bruker redskaper i større grad enn noen andre.</p>
+            </div>
+        </article>
+        <article class="imageSection">
+            <div class="tekst">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio sit porro consequuntur vero dolore,
+                    laborum ducimus dignissimos veritatis earum, similique natus cum rem aliquid magnam laboriosam delectus
+                    dicta ratione. Quas.</p>
+            </div>
+            <div class="bilde">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/815Y-3I6fZL._AC_SL1500_.jpg"
+                    alt="Leonardo Da Vinci">
+                <p class="bildetekst">Det perfekte mennesket fremstilt av Leonardo Da Vinci</p>
+            </div>
+        </article>
+    </section>
+    
+    <section id="Evolusjon">
+        <h3 class="sectionTitle">Evolusjon</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laudantium impedit excepturi consequatur odit
+            labore, nihil mollitia assumenda sapiente sit aut incidunt molestias? Facilis nihil recusandae sapiente itaque
+            rem perferendis corrupti officiis iusto in saepe! Commodi veniam itaque ipsa cupiditate, deleniti non voluptate
+            error dicta minima similique nulla sapiente? Deserunt voluptas id modi corrupti eligendi nemo iusto illum qui
+            enim, et corporis nam voluptatibus in sapiente? Molestiae adipisci iste voluptate ipsam dolore possimus
+            asperiores eius quae quo enim. Nulla ratione iste perferendis eligendi optio neque iure unde maxime, dolores
+            odio quo molestiae pariatur perspiciatis? Repudiandae assumenda dolore perferendis voluptates, impedit, sunt
+            expedita et quasi amet corrupti possimus. Corrupti dignissimos et placeat! Recusandae perspiciatis quas porro,
+            suscipit assumenda ab cum! Perspiciatis sunt impedit, doloremque ad corporis autem, animi ipsa deleniti tenetur
+            vitae hic dicta quo placeat totam dolorem voluptate veniam aut praesentium voluptatibus maiores. Inventore nobis
+            recusandae eos labore quidem cupiditate.</p>
+        <article class="imageSection">
+            <div class="tekst column13">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio sit porro consequuntur vero dolore,
+                    laborum ducimus dignissimos veritatis earum, similique natus cum rem aliquid magnam laboriosam delectus
+                    dicta ratione. Quas.</p>
+            </div>
+            <div class="bilde">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/815Y-3I6fZL._AC_SL1500_.jpg"
+                    alt="Leonardo Da Vinci">
+                <p class="bildetekst">Det perfekte mennesket fremstilt av Leonardo Da Vinci</p>
+            </div>
+        </article>
+    </section>
+    
+    <section id="Biologi">
+        <h3 class="sectionTitle">Biologi</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laudantium impedit excepturi consequatur odit
+            labore, nihil mollitia assumenda sapiente sit aut incidunt molestias? Facilis nihil recusandae sapiente itaque
+            rem perferendis corrupti officiis iusto in saepe! Commodi veniam itaque ipsa cupiditate, deleniti non voluptate
+            error dicta minima similique nulla sapiente? Deserunt voluptas id modi corrupti eligendi nemo iusto illum qui
+            enim, et corporis nam voluptatibus in sapiente? Molestiae adipisci iste voluptate ipsam dolore possimus
+            asperiores eius quae quo enim. Nulla ratione iste perferendis eligendi optio neque iure unde maxime, dolores
+            odio quo molestiae pariatur perspiciatis? Repudiandae assumenda dolore perferendis voluptates, impedit, sunt
+            expedita et quasi amet corrupti possimus. Corrupti dignissimos et placeat! Recusandae perspiciatis quas porro,
+            suscipit assumenda ab cum! Perspiciatis sunt impedit, doloremque ad corporis autem, animi ipsa deleniti tenetur
+            vitae hic dicta quo placeat totam dolorem voluptate veniam aut praesentium voluptatibus maiores. Inventore nobis
+            recusandae eos labore quidem cupiditate.</p>
+        <article class="imageSection">
+            <div class="tekst column13">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio sit porro consequuntur vero dolore,
+                    laborum ducimus dignissimos veritatis earum, similique natus cum rem aliquid magnam laboriosam delectus
+                    dicta ratione. Quas.</p>
+            </div>
+            <div class="bilde">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/815Y-3I6fZL._AC_SL1500_.jpg"
+                    alt="Leonardo Da Vinci">
+                <p class="bildetekst">Det perfekte mennesket fremstilt av Leonardo Da Vinci</p>
+            </div>
+        </article>
+    </section>
+    
+    <footer>
+        <article id="">
+            <ul id="footerNav">
+                <li><a href="main.html" id="NavDef">Definisjon</a></li>
+                <li><a href="main.html#Evolusjon" id="NavEvo">Evolusjon</a></li>
+                <li><a href="main.html#Biologi" id="NavBio">Biologi</a></li>
+                <li><a href="lit.html" id="NavPsy">Psykologi</a></li>
+                <li><a href="lit.html" id="NavKul">Kultur</a></li>
+                <li><a href="lit.html" id="NavSam">Samfunn</a></li>
+            </ul>
+        </article>
+    
+        <article id="footerEnd">
+            <p>Nettside laget av Anders og frederik<br>Tekst skrevet av Anna og Lisa</p>
+        </article>
+    
+    </footer>
+    
+    
+    </div>
+    <div class="pop-up">
+        <div class="pop-upbox">
+            <div id="quiz">
+                <h1>Bare mennesker tillat</h1>
+                <hr style="margin-bottom: 20px">
+                <p id="question"></p>
+                <div class="buttons">
+                    <button id="btn0" class="btn">
+                        <span id="choice0"></span>
+                    </button>
+                    <button id="btn1" class="btn">
+                        <span id="choice1"></span>
+                    </button>
+                    <button id="btn2" class="btn">
+                        <span id="choice2"></span>
+                    </button>
+                    <button id="btn3" class="btn">
+                        <span id="choice3"></span>
+                    </button>
+                </div>
+                <hr style="margin-top: 50px">
+                <footer>
+                    <p id="progress">spørsmål x av y</p>
+                </footer>
+            </div>
+        </div>
+        <script src="./questions.js"></script>
+    </div>
+    <audio id="myAudio">
+        <source src="alarm.mp3" type="audio">
+    </audio>
 
-    <h3></h3>
+
 </body>
 </html>
