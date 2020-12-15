@@ -7,17 +7,16 @@ function noScroll() {
     window.scrollTo(0, 0);
 }
 
-// var x = document.getElementById("myAudio");
+var x = document.getElementById("myAudio");
 
-// function playAudio() {
-//   x.play();
-// }
+function playAudio() {
+  x.play();
+}
 
-// function pauseAudio() {
-//   x.pause();
-// } 
-
-// playAudio();
+function pauseAudio() {
+  x.pause();
+} 
+playAudio();
 
 window.addEventListener('scroll', noScroll);
 
