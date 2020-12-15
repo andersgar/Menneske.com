@@ -18,7 +18,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   background-color: #094b27;
   padding: 0 15px;
   overflow: hidden;
@@ -50,8 +50,8 @@ header .headerContent #logo {
 }
 
 header .headerContent #logo img {
-  height: 7vh;
-  margin-right: 1vw;
+  height: 7vw;
+  margin: 1vh 1vw 1vh 0;
 }
 
 header .headerContent #navbar {
@@ -60,6 +60,9 @@ header .headerContent #navbar {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .headerContent #navbar li {
@@ -85,6 +88,12 @@ header .headerContent #navbar .active, header .headerContent #navbar a:hover {
   background-color: #96491d;
   border-bottom: 5px solid white;
   color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    background-color: blue;
+  }
 }
 
 .forside {
@@ -115,7 +124,7 @@ header .headerContent #navbar .active, header .headerContent #navbar a:hover {
 section {
   width: 80%;
   margin: 2vh auto;
-  background-color: rgba(241, 220, 203, 0.438);
+  background-color: #cfbfab;
   padding: 2px 10px;
 }
 
