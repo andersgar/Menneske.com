@@ -102,7 +102,7 @@ function showScores() {
 
 var questions = [
     new Question("Er du et Menneske?", ["Ja", "Nei", "kanskje", "Nei!!! æssssjjj"], "Ja"),
-    new Question("Helt sikker?", ["jaaa!","Nei", "Ok jeg tilstår, ikke egentlig :'(", "jepp forstatt menneske"], "Jaaa!"),
+    new Question("Helt sikker?", ["jaaa!","Nei", "Ok jeg tilstår, ikke egentlig :'(", "jepp forstatt menneske"], "jaaa!"),
     new Question("Tror vennene dine du er et menneske?", ["Nei, absulutt ikke", "Mest sannsynelig ikke, --jeg er for smart til å være menneske", "blurgghhh", "Ja"], "Ja"),
     new Question("Hva er 3198 * 19673", ["62914254", "Rundt 60 000 000", "Ikke ydmyke meg med så enkle beregninger.", "Mye?"], "Mye?")
 ];
