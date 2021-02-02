@@ -90,12 +90,6 @@ header .headerContent #navbar .active, header .headerContent #navbar a:hover {
   color: white;
 }
 
-@media screen and (max-width: 1000px) {
-  header {
-    background-color: blue;
-  }
-}
-
 .forside {
   height: 60vh;
   background-position: center;
