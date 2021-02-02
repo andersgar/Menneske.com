@@ -94,7 +94,7 @@ function showScores() {
     }, 5000);
     }
     else if(quiz.score < (questions.length / 2)){
-        // gameOverHTML += "<img src="alens.jpg" alt="">";
+        gameOverHTML += "<h1>stikk av</h1>";
     }
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
