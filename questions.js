@@ -1,26 +1,17 @@
-
-
 human = false;
+
 
 
 function noScroll() {
     window.scrollTo(0, 0);
 }
 
-var x = document.getElementById("myAudio");
-
-function playAudio() {
-  x.play();
-}
-
-function pauseAudio() {
-  x.pause();
-} 
-playAudio();
-
 window.addEventListener('scroll', noScroll);
 
+
 $(function() {
+    // var audio = new Audio("alarm.mp3");
+    // audio.play();
     $('.pop-up').hide();
     $('.pop-up').fadeIn(500);
 });
@@ -90,29 +81,28 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Resultat</h1>";
+    var gameOverHTML = "<h1>resultat</h1>";
     gameOverHTML += "<h2 id='score'> du er: " + (quiz.score  * (90 / questions.length ) + Math.random(10)) +"% prosent menneske</h2>";
-    var element = document.getElementById("quiz");
     if(quiz.score > (questions.length / 2)){
         human = true;
         gameOverHTML += "<h1>Velkommen</h1>";
-        element.innerHTML = gameOverHTML;
         setTimeout(function(){
         $('.pop-up').fadeOut(500);
         document.getElementById("overlay").classList.remove("blur");
         window.removeEventListener('scroll', noScroll);
-        // pauseAudio();
+        audio.pause();
     }, 5000);
     }
     else if(quiz.score < (questions.length / 2)){
-        gameOverHTML += "<h1>æssj ekle skapning, gå vekk</h1>";
-        element.innerHTML = gameOverHTML;
+        // gameOverHTML += "<img src="alens.jpg" alt="">";
     }
+    var element = document.getElementById("quiz");
+    element.innerHTML = gameOverHTML;
 };
 
 var questions = [
     new Question("Er du et Menneske?", ["Ja", "Nei", "kanskje", "Nei!!! æssssjjj"], "Ja"),
-    new Question("Helt sikker?", ["jaaa!","Nei", "Ok jeg tilstår, ikke egentlig :'(", "jepp forstatt menneske"], "jaaa!"),
+    new Question("Helt sikker?", ["jaaa!","Nei", "Ok jeg tilstår, ikke egentlig :'(", "jepp forstatt menneske"], "Jaaa!"),
     new Question("Tror vennene dine du er et menneske?", ["Nei, absulutt ikke", "Mest sannsynelig ikke, --jeg er for smart til å være menneske", "blurgghhh", "Ja"], "Ja"),
     new Question("Hva er 3198 * 19673", ["62914254", "Rundt 60 000 000", "Ikke ydmyke meg med så enkle beregninger.", "Mye?"], "Mye?")
 ];
